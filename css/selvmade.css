@@ -1,0 +1,51 @@
+h1, h2 {
+    font-family: Cambay;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+button {
+	margin-bottom: 2em;
+}
+
+img {
+	max-width: 26%;
+	min-width: 10%;
+	height: auto;
+}
+#mainimg {
+	min-width: 8em;
+}
+p, .contact {
+   font-family: Raleway;
+   font-size: 1.2em;
+   margin-top: 0.7em;
+}
+
+.contact {
+	border-style: solid;
+	display: inline-block;
+	text-align: center;
+	height: 8.5em;
+	width: auto;
+	line-height: 70%;
+	list-style-type: none;
+	margin-top: 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+text-center.img {
+    height: auto;
+    width: 5em;
+    overflow: scroll;
+}
+@media only screen and (max-width: 500px) {
+	img {
+		max-width: 40%;
+		min-width: 30%;
+		height: auto;
+	}
+}
+
