@@ -1,7 +1,9 @@
+body {
+  overflow: hidden;
+}
 h1, h2 {
     font-family: Cambay;
     font-weight: bold;
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
@@ -10,42 +12,95 @@ button {
 }
 
 img {
-	max-width: 26%;
-	min-width: 10%;
+	height:700px;
+  width: auto;
+  left: 7em;
+  top: 0;
+  position: fixed;
+}
+
+.alltext {
+  float: right;
+  display: inline-block;
+	text-align: center;
 	height: auto;
+	min-width: 20%;
+  max-width: 40%;
+  min-height: 23em;
+	line-height: 90%;
+	list-style-type: none;
+	margin-top: 0.1em;
+  margin-right: 5em;
+  margin-bottom: 1em;
+	padding-right: 1em;
 }
-#mainimg {
-	min-width: 8em;
+.title {
+  position: fixed;
 }
-p, .contact {
+.maintext {
+  margin-right: 3em;
+  overflow-y: scroll;
+  height: 500px;
+  margin-top: 7.5em;
+}
+p, .contact, .biography {
    font-family: Raleway;
    font-size: 1.2em;
+   line-height: 2em;
    margin-top: 0.7em;
 }
 
-.contact {
+.contact, .biography {
 	border-style: solid;
-	display: inline-block;
-	text-align: center;
-	height: 8.5em;
-	width: auto;
-	line-height: 70%;
-	list-style-type: none;
-	margin-top: 0.1em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  margin-top: 2em;
 }
 
-text-center.img {
-    height: auto;
-    width: 5em;
+.biography {
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 500px) and (min-height: 500px) {
+  .maintext {
+  height: 500px;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 1090px) {
+  img {
+    display: none;
+  }
+  a {
+    color: #ff4000;
+  }
+  body {
+    overflow: auto;
+    background-image: url(../imgs/DSC_1640.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50%;
+  }
+  .alltext {
+    float: none;
+    display: block;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .maintext {
+    color: rgb(255, 255, 255);
+    height: 600px;
+    width: 100%;
     overflow: scroll;
+    text-align: center;
+  }
 }
-@media only screen and (max-width: 500px) {
-	img {
-		max-width: 40%;
-		min-width: 30%;
-		height: auto;
-	}
-}
-
