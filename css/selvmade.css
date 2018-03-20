@@ -50,7 +50,7 @@ p, .contact, .biography {
    margin-top: 0.7em;
 }
 
-.contact, .biography {
+.contact, .biography, .skillset, .hobbies {
 	border-style: solid;
   padding-left: 1em;
   padding-right: 1em;
@@ -62,7 +62,7 @@ p, .contact, .biography {
   margin-bottom: 1.5em;
 }
 
-@media only screen and (max-width: 1090px) {
+@media screen and (max-width: 1090px) {
   img {
     display: none;
   }
@@ -70,7 +70,11 @@ p, .contact, .biography {
     color: #ff4000;
   }
   body {
-    overflow: auto;
+    overflow: hidden;
+  }
+  .title {
+    margin-left: auto;
+    margin-right: auto;
   }
   .alltext {
     float: none;
@@ -94,6 +98,13 @@ p, .contact, .biography {
     width: 100%;
     overflow: scroll;
     text-align: center;
-    padding: 0em 2em 1em 2em;
+    padding: 1em 3em 1em 3em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .maintext {
+    height: 700px;
+    overflow-y: hidden;
   }
 }
