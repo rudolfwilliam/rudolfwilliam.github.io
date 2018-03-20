@@ -62,13 +62,6 @@ p, .contact, .biography {
   margin-bottom: 1.5em;
 }
 
-@media only screen and (max-width: 500px) and (min-height: 500px) {
-  .maintext {
-  height: 500px;
-  width: 100%;
-}
-}
-
 @media only screen and (max-width: 1090px) {
   img {
     display: none;
@@ -78,12 +71,6 @@ p, .contact, .biography {
   }
   body {
     overflow: auto;
-    background-image: url(../imgs/DSC_1640.jpg);
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 50%;
   }
   .alltext {
     float: none;
@@ -97,10 +84,16 @@ p, .contact, .biography {
   }
 
   .maintext {
+    background-image: url(../imgs/DSC_1640.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 50% 100%;
+    background-size: contain;
     color: rgb(255, 255, 255);
     height: 600px;
     width: 100%;
     overflow: scroll;
     text-align: center;
+    padding: 0em 2em 1em 2em;
   }
 }
