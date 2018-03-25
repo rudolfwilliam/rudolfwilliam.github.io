@@ -91,6 +91,7 @@ p, .contact, .biography {
     margin-right: auto;
   }
 
+
   .maintext {
     display: block;
     margin-left: auto;
@@ -111,6 +112,22 @@ p, .contact, .biography {
   }
 }
 
+@media screen and (max-device-width: 1170px) {
+  .maintext {
+    max-height: 1000px;
+  }
+  .title {
+    font-size: 1.4em;
+  }
+  h1, h2 {
+    font-size: 2em;
+  }
+  p, .contact, .biography, .skillset, .hobbies {
+     font-size: 1.5em;
+  }
+}
+
+
 @media screen and (max-device-width: 642px) {
   .maintext {
     max-height: none;
@@ -123,25 +140,28 @@ p, .contact, .biography {
     font-size: 1.6em;
   }
   h1, h2 {
-    font-size: 2.2em;
+    font-size: 2.3em;
   }
   p, .contact, .biography, .skillset, .hobbies {
      font-size: 1.2em;
   }
 }
 
-@media screen and (max-device-width: 400px) {
+@media screen and (max-device-width: 411px) {
   .title {
     font-size: 1.6em;
   }
   h1, h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
+  }
+  .alltext {
+    max-width: 90%;
   }
   .maintext {
-    margin-top: 9em;
+    margin-top: 7em;
     height: 1100px;
   }
   p, .contact, .biography, .skillset, .hobbies {
-     font-size: 1.5em;
+     font-size: 1.7em;
   }
 }
