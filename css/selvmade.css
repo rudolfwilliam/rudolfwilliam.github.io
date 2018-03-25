@@ -15,7 +15,7 @@ img {
 	height:700px;
   width: auto;
   left: 7em;
-  top: 0;
+  top: 3%;
   position: fixed;
 }
 
@@ -62,7 +62,7 @@ p, .contact, .biography {
   margin-bottom: 1.5em;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1170px) {
   img {
     display: none;
   }
@@ -71,30 +71,39 @@ p, .contact, .biography {
   }
   body {
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
   }
   .title {
+    position: relative;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   .alltext {
+    min-width: 30%;
+    max-width: 80%;
     float: none;
     display: block;
-    left: 50%;
-    top: 50%;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
   }
 
   .maintext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
     background-image: url(../imgs/DSC_1640.jpg);
     background-repeat: no-repeat;
     background-origin: border-box;
-    background-position: 50% 100%;
-    background-size: contain;
+    background-position: 50% 10%;
+    background-size: cover;
     color: rgb(255, 255, 255);
-    height: 600px;
+    height: auto;
+    max-height: 600px;
     width: 100%;
     overflow: scroll;
     text-align: center;
@@ -102,9 +111,37 @@ p, .contact, .biography {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 642px) {
   .maintext {
-    height: 700px;
-    overflow-y: hidden;
+    max-height: none;
+    margin-top: 5em;
+    height: 1000px;
+    width: 700px;
+    background-size: cover;
+  }
+  .title {
+    font-size: 1.6em;
+  }
+  h1, h2 {
+    font-size: 2.2em;
+  }
+  p, .contact, .biography, .skillset, .hobbies {
+     font-size: 1.2em;
+  }
+}
+
+@media screen and (max-device-width: 400px) {
+  .title {
+    font-size: 1.6em;
+  }
+  h1, h2 {
+    font-size: 2.2em;
+  }
+  .maintext {
+    margin-top: 9em;
+    height: 1100px;
+  }
+  p, .contact, .biography, .skillset, .hobbies {
+     font-size: 1.5em;
   }
 }
