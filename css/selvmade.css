@@ -15,7 +15,7 @@ img {
 	height:700px;
   width: auto;
   left: 7em;
-  top: 3%;
+  top: 10%;
   position: fixed;
 }
 
@@ -29,25 +29,26 @@ img {
   min-height: 23em;
 	line-height: 90%;
 	list-style-type: none;
-	margin-top: 0.1em;
+	margin-top: 3em;
   margin-right: 5em;
   margin-bottom: 1em;
 	padding-right: 1em;
 }
 .title {
-  position: fixed;
+  margin-right: 3em;
+  height: 100px;
 }
 .maintext {
   margin-right: 3em;
   overflow-y: scroll;
-  height: 500px;
-  margin-top: 7.5em;
+  height: 35em;
+  margin-top: 3em;
 }
 p, .contact, .biography {
    font-family: Raleway;
    font-size: 1.2em;
    line-height: 2em;
-   margin-top: 0.7em;
+   margin-top: 0em;
 }
 
 .contact, .biography, .skillset, .hobbies {
@@ -149,16 +150,16 @@ p, .contact, .biography {
 
 @media screen and (max-device-width: 411px) {
   .title {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
-  h1, h2 {
+  h1 {
     font-size: 2.5em;
   }
   .alltext {
     max-width: 90%;
   }
   .maintext {
-    margin-top: 7em;
+    margin-top: 10em;
     height: 1100px;
   }
   p, .contact, .biography, .skillset, .hobbies {
