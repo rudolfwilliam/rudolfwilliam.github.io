@@ -14,7 +14,7 @@ button {
 img {
 	height:700px;
   width: auto;
-  left: 7em;
+  left: 5%;
   top: 10%;
   position: fixed;
 }
@@ -68,7 +68,7 @@ p, .contact, .biography {
     display: none;
   }
   a {
-    color: #ff4000;
+    color: #000000;
   }
   body {
     overflow: auto;
@@ -95,8 +95,6 @@ p, .contact, .biography {
 
   .maintext {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 3em;
     background-image: url(../imgs/DSC_1640.jpg);
     background-repeat: no-repeat;
