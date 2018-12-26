@@ -12,11 +12,12 @@ button {
 }
 
 img {
-	height:700px;
+	height: 800px;
   width: auto;
   left: 5%;
-  top: 10%;
-  position: fixed;
+  top: 50%;
+  position: absolute;
+  transform: translate(0,-50%);
 }
 
 .alltext {
@@ -29,14 +30,15 @@ img {
   min-height: 23em;
 	line-height: 90%;
 	list-style-type: none;
-	margin-top: 3em;
+  position: absolute;
+  top: 50%;
   margin-right: 5em;
-  margin-bottom: 1em;
 	padding-right: 1em;
+  transform: translate(0,-50%);
 }
 .title {
   margin-right: 3em;
-  height: 100px;
+  height: auto;
 }
 .maintext {
   margin-right: 3em;
@@ -68,10 +70,11 @@ p, .contact, .biography {
     display: none;
   }
   a {
-    color: #000000;
+    color: black;
   }
   body {
     overflow: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -80,19 +83,27 @@ p, .contact, .biography {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.2em;
+  }
+
+  .subtitle {
+    margin-bottom: 1em;
   }
   .alltext {
-    min-width: 30%;
-    max-width: 80%;
-    float: none;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  	padding-right: 1em;
+    min-width: 100%;
+    position: relative;
+    transform: none;
+    /*max-width: 80%;*/
     display: block;
     text-align: center;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0em 0em;
   }
-
-
   .maintext {
     display: block;
     margin-top: 3em;
@@ -107,11 +118,17 @@ p, .contact, .biography {
     width: 100%;
     overflow: scroll;
     text-align: center;
-    padding: 1em 3em 1em 3em;
+    padding: 1em 2em 1em 2em;
   }
 }
 
 @media screen and (max-device-width: 1170px) {
+
+  .alltext{
+    display: inline-block;
+    text-align: center;
+  }
+
   .maintext {
     max-height: 1000px;
   }
