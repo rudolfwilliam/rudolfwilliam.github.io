@@ -1,6 +1,7 @@
 body {
-  overflow: hidden;
+  overflow: scroll;
 }
+
 h1, h2 {
     font-family: Cambay;
     font-weight: bold;
@@ -12,7 +13,7 @@ button {
 }
 
 img {
-	height: 800px;
+	height: 700px;
   width: auto;
   left: 5%;
   top: 50%;
@@ -65,7 +66,7 @@ p, .contact, .biography {
   margin-bottom: 1.5em;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1185px) {
   img {
     display: none;
   }
@@ -92,7 +93,6 @@ p, .contact, .biography {
   .alltext {
     margin-top: 0.5em;
     margin-bottom: 1em;
-  	padding-right: 1em;
     min-width: 100%;
     position: relative;
     transform: none;
