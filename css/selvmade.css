@@ -161,3 +161,10 @@ p {
     margin-top: 2em;
   }
 }
+
+@media screen and (min-width:3000px) {
+  .alltext {
+    width: 1500px;
+    margin: auto;
+  }
+}
