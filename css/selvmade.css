@@ -41,6 +41,7 @@ button {
 .title {
   height: auto;
 }
+
 .main {
   clear: both;
   padding-top: 0.5em;
@@ -63,7 +64,70 @@ p {
   margin-top: 2em;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
+
+  h1 {
+    font-family: Cambay;
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+  }
+
+  h2 {
+      font-family: Cambay;
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      margin-top: 0.5em;
+  }
+
+  p {
+     font-family: Raleway;
+     font-size: 2em;
+     line-height: 2em;
+  }
+
+  .github, .twitter {
+    display: inline;
+    height: 60px;
+  }
+
+  .rounded {
+    float: none;
+    clear: both;
+    height: 50em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  .outer {
+    clear: both;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2.5em;
+  }
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .biography {
+    clear: both;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
 
   .rounded {
     float: none;
