@@ -5,6 +5,13 @@ h1, h2 {
     margin-top: 0.5em;
 }
 
+h3 {
+  font-family: Cambay;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+
 button {
 	margin-bottom: 2em;
 }
@@ -56,7 +63,7 @@ p {
    line-height: 2em;
 }
 
-.contact, .skillset, .hobbies, .research_interests {
+.contact, .skillset, .publications, .hobbies, .research_interests {
 	border-style: solid;
   padding-left: 1em;
   padding-right: 1em;
@@ -81,6 +88,14 @@ p {
       margin-bottom: 1em;
       margin-top: 0.5em;
   }
+
+  h3 {
+    font-family: Cambay;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
 
   p {
      font-family: Raleway;
