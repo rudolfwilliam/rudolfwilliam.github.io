@@ -136,6 +136,11 @@ p {
     padding-top: 0.5em;
     margin-top: 2em;
   }
+
+  .github, .twitter, .google_scholar {
+    display: inline;
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 800px) {
