@@ -179,7 +179,7 @@ p {
   }
 }
 
-@media screen and (min-width:3000px) {
+@media screen and (min-width:1500px) {
   .alltext {
     width: 1500px;
     margin: auto;
