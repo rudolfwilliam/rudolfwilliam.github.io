@@ -16,7 +16,7 @@ button {
 	margin-bottom: 2em;
 }
 
-.github, .twitter {
+.github, .twitter, .google_scholar {
   display: inline;
   height: 30px;
 }
@@ -103,11 +103,6 @@ p {
      line-height: 2em;
   }
 
-  .github, .twitter {
-    display: inline;
-    height: 60px;
-  }
-
   .image {
     float: none;
     clear: both;
@@ -161,7 +156,7 @@ p {
     padding-right: 2em;
     padding-bottom: 2.5em;
   }
-  
+
   .main {
     padding-left: 0;
     padding-right: 0;
