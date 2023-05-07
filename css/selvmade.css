@@ -11,14 +11,23 @@ h3 {
   margin-top: 0.5em;
 }
 
-
 button {
 	margin-bottom: 2em;
 }
 
-.github, .twitter, .google_scholar {
+.github, .twitter, .google_scholar, .linkedin {
   display: inline;
   height: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.Github, .Twitter, .Google_scholar, .Linkedin {
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .image {
@@ -137,9 +146,20 @@ p {
     margin-top: 2em;
   }
 
-  .github, .twitter, .google_scholar {
+  .github, .twitter, .google_scholar, .linkedin {
     display: inline;
-    height: 60px;
+    height: 70px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .icons {
+    display: block;
+  }
+  
+  .Github, .Twitter, .Google_scholar, .Linkedin {
+    margin-left: 0em;
+    margin-right: 0em;
   }
 }
 
