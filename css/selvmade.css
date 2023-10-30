@@ -166,8 +166,8 @@ p {
   }
 
   .Github, .Twitter, .Google_scholar, .Linkedin {
-    margin-left: 0em;
-    margin-right: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
