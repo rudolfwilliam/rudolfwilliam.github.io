@@ -28,11 +28,12 @@ button {
 .icons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Github, .Twitter, .Google_scholar, .Linkedin {
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .image {
@@ -159,7 +160,9 @@ p {
   }
 
   .icons {
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .Github, .Twitter, .Google_scholar, .Linkedin {
