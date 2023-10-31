@@ -1,14 +1,18 @@
 h1, h2 {
-    font-family: Cambay;
+    font-family: Merriweather;
     font-weight: bold;
     margin-bottom: 1em;
-    margin-top: 0.5em;
+    margin-top: 1em;
+}
+
+h1 {
+  font-size: 60px;
 }
 
 h3 {
-  font-family: Cambay;
+  font-family: Merriweather;
   margin-bottom: 1em;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 button {
@@ -32,7 +36,7 @@ button {
 }
 
 .Github, .Twitter, .Google_scholar, .Linkedin {
-  flex: 1 1 0px;
+  flex: 1 1 0em;
   margin-left: 2em;
   margin-right: 2em;
 }
@@ -87,10 +91,29 @@ p {
   margin-top: 2em;
 }
 
+/*.research_interests {
+  float: left;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-right: 2em;
+  width: auto;
+  height: 10em;
+}
+
+.hobbies {
+  display: block;
+  height: 10em;
+} */
+
+.contact {
+  padding-right: 6em;
+  padding-left: 6em;
+}
+
 @media screen and (max-device-width: 600px) {
 
   h1 {
-    font-family: Cambay;
+    font-family: Merriweather;
     font-size: 5em;
     font-weight: bold;
     margin-bottom: 1em;
@@ -98,7 +121,7 @@ p {
   }
 
   h2 {
-      font-family: Cambay;
+      font-family: Merriweather;
       font-size: 4em;
       font-weight: bold;
       margin-bottom: 1em;
@@ -106,7 +129,7 @@ p {
   }
 
   h3 {
-    font-family: Cambay;
+    font-family: Merriweather;
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 1em;
@@ -167,8 +190,8 @@ p {
   }
 
   .Github, .Twitter, .Google_scholar, .Linkedin {
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 6em;
+    margin-right: 6em;
   }
 }
 
@@ -205,6 +228,11 @@ p {
     padding-right: 1em;
     padding-top: 0.5em;
     margin-top: 2em;
+  }
+
+  .contact {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
