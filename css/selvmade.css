@@ -106,8 +106,8 @@ p {
 } */
 
 .contact {
-  padding-right: 6em;
-  padding-left: 6em;
+  padding-right: 8em;
+  padding-left: 8em;
 }
 
 @media screen and (max-device-width: 600px) {
@@ -190,8 +190,8 @@ p {
   }
 
   .Github, .Twitter, .Google_scholar, .Linkedin {
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 5em;
+    margin-right: 5em;
   }
 }
 
