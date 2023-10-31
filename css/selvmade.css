@@ -105,6 +105,23 @@ p {
   height: 10em;
 } */
 
+.skillset {
+  text-align: center; /* Center the text within the skillset container */
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 8em;
+  flex: 1 1 auto;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .contact {
   padding-right: 8em;
   padding-left: 8em;
