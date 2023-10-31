@@ -32,6 +32,7 @@ button {
 }
 
 .Github, .Twitter, .Google_scholar, .Linkedin {
+  flex: 1 1 0px;
   margin-left: 2em;
   margin-right: 2em;
 }
@@ -166,8 +167,8 @@ p {
   }
 
   .Github, .Twitter, .Google_scholar, .Linkedin {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
   }
 }
 
