@@ -15,6 +15,11 @@ h3 {
   margin-top: 1em;
 }
 
+h4 {
+  font-family: Raleway;
+  font-weight: bold;
+}
+
 button {
 	margin-bottom: 2em;
 }
@@ -77,10 +82,24 @@ button {
   padding-bottom: 2.5em;
 }
 
-p {
+p, ul {
    font-family: Raleway;
    font-size: 1.2em;
    line-height: 2em;
+}
+
+.research_interests {
+  text-align: center;
+}
+
+.research_interests ul, .hobbies ul {
+  list-style-position: inside; /* Keep the bullet points inside the list items */
+  padding-left: 0; /* Remove default left padding of the ul */
+  display: inline-block;
+}
+
+.research_interests li, .hobbies li {
+  display: block; /* Display the list items as blocks */
 }
 
 .contact, .skillset, .publications, .hobbies, .research_interests {
@@ -89,6 +108,14 @@ p {
   padding-right: 1em;
   padding-top: 0.5em;
   margin-top: 2em;
+}
+
+footer {
+    width: 100%;
+    font-family: Merriweather;
+    overflow: hidden;
+    margin: 5px auto 10px auto;
+    text-align: center;
 }
 
 /*.research_interests {
@@ -128,7 +155,6 @@ p {
 }
 
 @media screen and (max-device-width: 600px) {
-
   h1 {
     font-family: Merriweather;
     font-size: 5em;
@@ -151,7 +177,13 @@ p {
     font-weight: bold;
     margin-bottom: 1em;
     margin-top: 0.5em;
-}
+  }
+
+  h4 {
+    font-family: Merriweather;
+    font-size: 2em;
+    font-weight: bold;
+  }
 
   p {
      font-family: Raleway;
@@ -209,6 +241,13 @@ p {
   .Github, .Twitter, .Google_scholar, .Linkedin {
     margin-left: 5em;
     margin-right: 5em;
+  }
+
+  .skill {
+    width: 10em;
+    flex: 1 1 auto;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 
