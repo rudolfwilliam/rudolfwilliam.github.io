@@ -181,11 +181,15 @@ footer {
 
   h4 {
     font-family: Merriweather;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
   }
 
-  p {
+  footer {
+    font-size: 2em;
+  }
+
+  p, ul {
      font-family: Raleway;
      font-size: 2.5em;
      line-height: 2em;
@@ -244,7 +248,7 @@ footer {
   }
 
   .skill {
-    width: 10em;
+    width: 30em;
     flex: 1 1 auto;
     margin-left: 2em;
     margin-right: 2em;
