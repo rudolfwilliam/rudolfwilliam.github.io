@@ -1,5 +1,16 @@
+:root {
+  --primary-font: 'Merriweather', serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-color: #000;
+  --secondary-color: #0010;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2 {
-    font-family: Merriweather;
+    font-family: var(--primary-font);
     font-weight: bold;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -10,13 +21,13 @@ h1 {
 }
 
 h3 {
-  font-family: Merriweather;
+  font-family: var(--primary-font);
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
 h4 {
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-weight: bold;
 }
 
@@ -54,7 +65,7 @@ button {
 }
 
 .biography {
-  border-style: solid;
+  border: 2.0px solid #000;
   display: block;
   height: 20em;
   overflow: scroll;
@@ -83,7 +94,7 @@ button {
 }
 
 p, ul {
-   font-family: Raleway;
+   font-family: var(--secondary-font);
    font-size: 1.2em;
    line-height: 2em;
 }
@@ -93,17 +104,18 @@ p, ul {
 }
 
 .research_interests ul, .hobbies ul {
-  list-style-position: inside; /* Keep the bullet points inside the list items */
+  list-style-type: none;
+  list-style-position: none; /* Keep the bullet points inside the list items */
   padding-left: 0; /* Remove default left padding of the ul */
-  display: inline-block;
+  text-align: center;
 }
 
 .research_interests li, .hobbies li {
-  display: block; /* Display the list items as blocks */
+  text-align: center;
 }
 
 .contact, .skillset, .publications, .hobbies, .research_interests {
-	border-style: solid;
+  border: 2.0px solid #000;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.5em;
@@ -112,25 +124,10 @@ p, ul {
 
 footer {
     width: 100%;
-    font-family: Merriweather;
-    overflow: hidden;
-    margin: 5px auto 10px auto;
+    font-family: var(--primary-font); 
+    margin: 5px auto;
     text-align: center;
 }
-
-/*.research_interests {
-  float: left;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-right: 2em;
-  width: auto;
-  height: 10em;
-}
-
-.hobbies {
-  display: block;
-  height: 10em;
-} */
 
 .skillset {
   text-align: center; /* Center the text within the skillset container */
@@ -156,7 +153,7 @@ footer {
 
 @media screen and (max-device-width: 600px) {
   h1 {
-    font-family: Merriweather;
+    font-family: var(--primary-font);
     font-size: 5em;
     font-weight: bold;
     margin-bottom: 1em;
@@ -164,7 +161,7 @@ footer {
   }
 
   h2 {
-      font-family: Merriweather;
+      font-family: var(--primary-font);
       font-size: 4em;
       font-weight: bold;
       margin-bottom: 1em;
@@ -172,7 +169,7 @@ footer {
   }
 
   h3 {
-    font-family: Merriweather;
+    font-family: var(--primary-font);
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 1em;
@@ -180,7 +177,7 @@ footer {
   }
 
   h4 {
-    font-family: Merriweather;
+    font-family: var(--primary-font);
     font-size: 3em;
     font-weight: bold;
   }
@@ -190,7 +187,7 @@ footer {
   }
 
   p, ul {
-     font-family: Raleway;
+     font-family: var(--secondary-font);
      font-size: 2.5em;
      line-height: 2em;
   }
