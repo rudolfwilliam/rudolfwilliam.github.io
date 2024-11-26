@@ -5,6 +5,12 @@
   --secondary-color: #0010;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,14 +65,18 @@ button {
 
 .image {
   float: left;
-  padding-left: 2em;
+  margin-left: 2em;
   width: auto;
   height: 20em;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
 }
 
 .biography {
   border: 2.0px solid #000;
   display: block;
+  border-radius: 10px;
   height: 20em;
   overflow: scroll;
   margin-left: 19em;
@@ -116,6 +126,7 @@ p, ul {
 
 .contact, .skillset, .publications, .hobbies, .research_interests {
   border: 2.0px solid #000;
+  border-radius: 10px;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.5em;
