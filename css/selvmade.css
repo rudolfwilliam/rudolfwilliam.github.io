@@ -207,6 +207,10 @@ footer {
      line-height: 2em;
   }
 
+  .remark {
+    font-size: 2em;
+  }
+
   .image {
     float: none;
     clear: both;
