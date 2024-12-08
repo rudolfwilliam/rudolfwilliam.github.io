@@ -109,22 +109,22 @@ p, ul {
    line-height: 2em;
 }
 
-.research_interests {
+.research_interests, .favorite_books {
   text-align: center;
 }
 
-.research_interests ul, .hobbies ul {
+.research_interests ul, .hobbies ul, .favorite_books ul {
   list-style-type: none;
   list-style-position: none; /* Keep the bullet points inside the list items */
   padding-left: 0; /* Remove default left padding of the ul */
   text-align: center;
 }
 
-.research_interests li, .hobbies li {
+.research_interests li, .hobbies li, .favorite_books {
   text-align: center;
 }
 
-.contact, .skillset, .publications, .hobbies, .research_interests {
+.contact, .skillset, .publications, .hobbies, .research_interests, .favorite_books {
   border: 2.0px solid #000;
   border-radius: 10px;
   padding-left: 1em;
