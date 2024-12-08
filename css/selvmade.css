@@ -113,6 +113,12 @@ p, ul {
   text-align: center;
 }
 
+.remark {
+  display: block;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
 .research_interests ul, .hobbies ul, .favorite_books ul {
   list-style-type: none;
   list-style-position: none; /* Keep the bullet points inside the list items */
@@ -258,6 +264,10 @@ footer {
     flex: 1 1 auto;
     margin-left: 2em;
     margin-right: 2em;
+  }
+
+  .favorite_books li strong {
+    display: block; /* Ensures the title is always on its own line */
   }
 }
 
