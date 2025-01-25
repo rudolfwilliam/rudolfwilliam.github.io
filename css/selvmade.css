@@ -119,7 +119,7 @@ p, ul {
   font-style: italic;
 }
 
-.research_interests ul, .hobbies ul, .favorite_books ul {
+.research_interests ul, .hobbies ul, .favorite_books ul, .news ul {
   list-style-type: none;
   list-style-position: none; /* Keep the bullet points inside the list items */
   padding-left: 0; /* Remove default left padding of the ul */
@@ -130,7 +130,32 @@ p, ul {
   text-align: center;
 }
 
-.contact, .skillset, .publications, .hobbies, .research_interests, .favorite_books {
+.timeline {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+
+/* Each timeline item is positioned relative so we can place
+   circles and a vertical line "behind" them */
+.timeline li {
+  position: relative;
+  padding-left: 0rem;   /* space for the vertical line and circle */
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* Optional link style improvements */
+.timeline a {
+  color: #3f7496;
+  text-decoration: none;
+}
+.timeline a:hover {
+  text-decoration: underline;
+}
+
+.contact, .skillset, .publications, .hobbies, .research_interests, .favorite_books, .news {
   border: 2.0px solid #000;
   border-radius: 10px;
   padding-left: 1em;
