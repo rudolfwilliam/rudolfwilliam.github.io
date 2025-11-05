@@ -21,7 +21,7 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #0b0f13;
+  --bg: #11161b;
   --text: #e5e7eb;
 
   --muted: #9aa3af;
