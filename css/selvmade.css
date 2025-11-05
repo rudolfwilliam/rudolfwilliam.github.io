@@ -1,8 +1,91 @@
+/* Color tokens */
+:root {
+  /* Base */
+  --bg: #ffffff;
+  --text: #1a1a1a;
+
+  /* Accents */
+  --muted: #6b7280;            /* gray-500-ish */
+  --link: #0d6efd;             /* Bootstrap primary */
+  --link-hover: #0a58ca;
+
+  /* Surfaces */
+  --surface: #ffffff;          /* light gray */
+  --border: #000;
+
+  /* Bootstrap variable bridges (helps built-in components look right) */
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--text);
+  --bs-link-color: var(--link);
+  --bs-link-hover-color: var(--link-hover);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0f13;
+  --text: #e5e7eb;
+
+  --muted: #9aa3af;
+  --link: #8ab4ff;
+  --link-hover: #a5c6ff;
+
+  --surface: #11161b;
+  --border: #7b8598;
+
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--text);
+  --bs-link-color: var(--link);
+  --bs-link-hover-color: var(--link-hover);
+}
+
+/* Apply tokens */
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: var(--link); }
+a:hover, a:focus { color: var(--link-hover); }
+
+/* Surface sections (tweak these to your structure/classes) */
+.content,
+.biography,
+.news,
+.skillset,
+.research_interests,
+.favorite_books,
+.hobbies,
+.outer,
+.timeline li {
+  background: var(--surface);
+  border-radius: .5rem;
+}
+
+/* Optional: give lists and cards some breathing room in dark too */
+.timeline li { padding: .75rem; margin-bottom: .75rem; }
+
 :root {
   --primary-font: 'Merriweather', serif;
   --secondary-font: 'Raleway', sans-serif;
   --primary-color: #000;
   --secondary-color: #0010;
+}
+
+/* In dark mode, invert the icon colors */
+:root[data-theme="dark"] .github,
+:root[data-theme="dark"] .twitter,
+:root[data-theme="dark"] .google_scholar,
+:root[data-theme="dark"] .linkedin {
+  filter: invert(1) brightness(0.8);
+}
+
+/* Apply same styling to dark mode icons */
+.github-dark, .twitter-dark, .google_scholar-dark, .linkedin-dark {
+  height: 30px;
+  transition: all 0.4s;
+}
+
+.github-dark:hover, .twitter-dark:hover, .linkedin-dark:hover, .google_scholar-dark:hover {
+  transform: scale(1.3);
 }
 
 .clearfix::after {
@@ -74,7 +157,7 @@ button {
 }
 
 .biography {
-  border: 2.0px solid #000;
+  border: 2.0px solid var(--border);
   display: block;
   border-radius: 10px;
   height: 20em;
@@ -156,7 +239,7 @@ p, ul {
 }
 
 .contact, .skillset, .publications, .hobbies, .research_interests, .favorite_books, .news {
-  border: 2.0px solid #000;
+  border: 2.0px solid var(--border);
   border-radius: 10px;
   padding-left: 1em;
   padding-right: 1em;

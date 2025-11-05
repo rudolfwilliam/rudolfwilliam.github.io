@@ -2,6 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+
+    <script>
+      // Read saved theme or fall back to system preference
+      (function () {
+        const saved = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = saved || (systemPrefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
 
     <title>Klaus-Rudolf Kladny: Personal Website</title>
 
@@ -52,7 +63,9 @@
       	<h2>Links</h2>
         <div class="icons">
         <div class="Github">
-        <a href="https://github.com/rudolfwilliam" aria-label="GitHub Profile"> <img src="imgs/GitHub-Mark-64px.png" alt="GitHub" class="github img-fluid"></a>
+        <a href="https://github.com/rudolfwilliam" aria-label="GitHub Profile"> 
+          <img src="imgs/GitHub-Mark-64px.png" alt="GitHub" class="github img-fluid">
+        </a>
         <p>GitHub</p>
         </div>
         <div class="Linkedin">
@@ -169,8 +182,38 @@
   <footer>
     &copy; <span id="year"></span> Klaus-Rudolf Kladny
   </footer>
+  <button id="theme-toggle" class="btn btn-outline-secondary" type="button" aria-label="Toggle dark mode" style="position:fixed; bottom:1rem; right:1rem; z-index:9999;">
+  <span aria-hidden="true">🌙</span>
+  </button>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+  const btn = document.getElementById('theme-toggle');
+
+  function currentTheme() {
+    return document.documentElement.getAttribute('data-theme') || 'light';
+  }
+  function setTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    localStorage.setItem('theme', t);
+    btn.innerHTML = t === 'dark' ? '<span aria-hidden="true">☀️</span>' : '<span aria-hidden="true">🌙</span>';
+    btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+
+  // Initialize button glyph/label
+  setTheme(currentTheme());
+
+  // Toggle on click
+  btn.addEventListener('click', () => {
+    setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+  });
+
+  // Optional: react live to system changes when user hasn’t chosen manually
+  const media = window.matchMedia('(prefers-color-scheme: dark)');
+  media.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) setTheme(e.matches ? 'dark' : 'light');
+  });
   </script>
   </body>
 </html>
