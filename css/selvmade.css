@@ -29,7 +29,7 @@
   --link-hover: #a5c6ff;
 
   --surface: #11161b;
-  --border: #7b8598;
+  --border: #5a6780;
 
   --bs-body-bg: var(--bg);
   --bs-body-color: var(--text);
@@ -41,6 +41,35 @@
 html, body {
   background: var(--bg);
   color: var(--text);
+}
+
+.timeline strong {
+  color: var(--link);
+  font-weight: 600;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.375rem; /* Bootstrap's default rounded corners */
+  border: 1px solid var(--border);
+  background: var(--surface);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+#theme-toggle:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 a { color: var(--link); }
@@ -60,6 +89,22 @@ a:hover, a:focus { color: var(--link-hover); }
   border-radius: .5rem;
 }
 
+.contact:hover, .skillset:hover, .publications:hover, .hobbies:hover, 
+.research_interests:hover, .favorite_books:hover, .news:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] .contact:hover, 
+:root[data-theme="dark"] .skillset:hover, 
+:root[data-theme="dark"] .publications:hover, 
+:root[data-theme="dark"] .hobbies:hover, 
+:root[data-theme="dark"] .research_interests:hover, 
+:root[data-theme="dark"] .favorite_books:hover, 
+:root[data-theme="dark"] .news:hover {
+  box-shadow: 0 4px 12px rgba(138, 180, 255, 0.15);
+}
+
 /* Optional: give lists and cards some breathing room in dark too */
 .timeline li { padding: .75rem; margin-bottom: .75rem; }
 
@@ -76,12 +121,6 @@ a:hover, a:focus { color: var(--link-hover); }
 :root[data-theme="dark"] .google_scholar,
 :root[data-theme="dark"] .linkedin {
   filter: invert(1) brightness(0.8);
-}
-
-/* Apply same styling to dark mode icons */
-.github-dark, .twitter-dark, .google_scholar-dark, .linkedin-dark {
-  height: 30px;
-  transition: all 0.4s;
 }
 
 .github-dark:hover, .twitter-dark:hover, .linkedin-dark:hover, .google_scholar-dark:hover {
@@ -161,12 +200,16 @@ button {
   display: block;
   border-radius: 10px;
   height: 20em;
-  overflow: scroll;
+  overflow-y: auto; /* Changed from overflow: scroll */
   margin-left: 19em;
   margin-right: 2em;
   padding-top: 0.5em;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.biography::-webkit-scrollbar {
+  width: 8px;
 }
 
 .alltext {
@@ -245,6 +288,7 @@ p, ul {
   padding-right: 1em;
   padding-top: 0.5em;
   margin-top: 2em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 footer {
@@ -274,6 +318,24 @@ footer {
 .contact {
   padding-right: 8em;
   padding-left: 8em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact:hover, .skillset:hover, .publications:hover, .hobbies:hover, 
+  .research_interests:hover, .favorite_books:hover, .news:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  :root[data-theme="dark"] .contact:hover, 
+  :root[data-theme="dark"] .skillset:hover, 
+  :root[data-theme="dark"] .publications:hover, 
+  :root[data-theme="dark"] .hobbies:hover, 
+  :root[data-theme="dark"] .research_interests:hover, 
+  :root[data-theme="dark"] .favorite_books:hover, 
+  :root[data-theme="dark"] .news:hover {
+    box-shadow: 0 4px 12px rgba(138, 180, 255, 0.15);
+  }
 }
 
 @media screen and (max-device-width: 600px) {
