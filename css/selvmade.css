@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@400;500;600&display=swap');
 /* Color tokens */
 :root {
   /* Base */
@@ -109,8 +110,10 @@ a:hover, a:focus { color: var(--link-hover); }
 .timeline li { padding: .75rem; margin-bottom: .75rem; }
 
 :root {
-  --primary-font: 'Merriweather', serif;
-  --secondary-font: 'Raleway', sans-serif;
+  /*--primary-font: 'Merriweather', serif;*/
+  /*--secondary-font: 'Raleway', sans-serif;*/
+  --primary-font: 'Libre Baskerville', serif;
+  --secondary-font: 'Space Grotesk', sans-serif;
   --primary-color: #000;
   --secondary-color: #0010;
 }
